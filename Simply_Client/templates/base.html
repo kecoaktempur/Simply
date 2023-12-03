@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% laod static %}
+
+    <title>{% block title %} {% endblock %}</title>
+</head>
+
+<body>
+    <nav>
+        <img src="{% static 'Simply Logo.png'%}" alt="logo simply">
+        <div class="right-text-place">
+            <a href="">Apply</a>
+            <a href="">Tracking</a>
+            <a href="">Username</a>
+        </div>
+    </nav>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <div class="main-footer">
+            <div class="left-upper">
+                <img src="{% static 'Polri Logo.png' %}" alt="logo kepolisian republik indonesia">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-tiktok"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="column-flex-text">
+                <div class="tab-contact-us">
+                    <h3>Contact Us</h3>
+                    <p>Visit us: </br>
+                        Jl. MT Haryono No.37-38, RT.8/RW.2, Cikoko, Pancoran, Jakarta Selatan Jakarta 12770
+                        </br>
+                        </br>
+                        Call us at +62 81 233 834 102</br>
+                        Mail us at humas@korlantas.go.id</p>
+                </div>
+                <div class="tab-list">
+                    <h3>About Us</h3>
+                    <a href="">Korlantas Polri</a>
+                    <a href="">Benefits</a>
+                    <a href="">Careers</a>
+                </div>
+                <div class="tab-list">
+                    <a href="">Terms & Condition</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms of Use</a>
+                </div>
+                <div class="tab-list"></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
