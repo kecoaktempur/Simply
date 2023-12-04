@@ -1,112 +1,116 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Montserrat';
+  font-family: "Montserrat", sans-serif;
 }
 
 nav {
-    width: 100%;
-    height: 90px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 0 240px;
-    box-shadow: #d3d3d3 1px 5px 20px;
+  width: 100%;
+  height: 90px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 240px;
+  box-shadow: #d3d3d3 1px 5px 20px;
 }
 
 nav img {
-    width: 150px;
-    height: 50px;
+  width: 150px;
+  height: 50px;
 }
 
 nav a {
-    text-decoration: none;
-    font-size: 24px;
-    color: #000;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    box-sizing: border-box;
+  text-decoration: none;
+  font-size: 24px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-sizing: border-box;
 }
 
 nav a span {
-    width: 0;
-    height: 4px;
-    background-color: #0E65D9;
-    bottom: -8px;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
-    transition: all .5s ease;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    align-items: center;
+  width: 0;
+  height: 4px;
+  background-color: #0e65d9;
+  bottom: -8px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  align-items: center;
 }
 
 nav a:hover span {
-    width: 100%;
+  width: 100%;
 }
 
 .right-text-place {
-    position: relative;
-    display: flex;
-    gap: 70px;
+  position: relative;
+  display: flex;
+  gap: 70px;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 260px;
-    background-color: #000;
-    box-sizing: border-box;
-    padding: 50px 240px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 260px;
+  background-color: #000;
+  box-sizing: border-box;
+  padding: 50px 240px;
 }
 
 .main-footer {
-    display: flex;
-    box-sizing: border-box;
-    align-items: start;
-    gap: 200px;
-    color: #fff;
+  display: flex;
+  box-sizing: border-box;
+  align-items: start;
+  gap: 200px;
+  color: #fff;
 }
 
 .left-part {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .socmed-logo {
-    display: flex;
-    font-size: 24px;
-    gap: 22px;
+  display: flex;
+  font-size: 24px;
+  gap: 22px;
 }
 
 .column-flex-text {
-    width: 100%;
-    display: flex;
-    align-items: start;
-    gap: 60px;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  gap: 60px;
 }
 
 .tab-list {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .tab-list a {
-    margin-top: 5px;
-    text-decoration: none;
-    color: #fff;
+  margin-top: 5px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.tab-contact-us p {
+  font-size: 14px;
 }
