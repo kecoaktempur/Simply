@@ -12,12 +12,15 @@ nav {
   height: 90px;
   background-color: #fff;
   display: flex;
+  position: fixed;
+  top: 0;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
   padding: 0 240px;
   box-shadow: #d3d3d3 1px 5px 20px;
+  z-index: 99;
 }
 
 nav img {
