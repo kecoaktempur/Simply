@@ -1,0 +1,44 @@
+{% extends "base.html" %} {% load static %} {% block style %}
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+/>
+<style>
+  .background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.1;
+    background: url("{% static 'img/korlantas.png' %}") center center/contain no-repeat
+      fixed;
+  }
+</style>
+{% endblock %} {% block title %} QRIS {% endblock %} {% block content %}
+
+<div class="the-container">
+  <div class="background-image">
+    <!-- <img src="{% static 'img/korlantas.png' %}" width="100%" height="100%" /> -->
+  </div>
+</div>
+
+<div
+  class="container d-flex align-items-center justify-content-center"
+  style="z-index: 0; height: max-content;"
+>
+  <div class="text-center">
+    <h1>Biaya Pembuatan SIM C</h1>
+    <h2>Rp. 100.000</h2>
+    <img
+      class="py-3 my-3"
+      src="https://cdn2.me-qr.com/qr/84650652.png?v=1701664646"
+      alt="Create qr code for free"
+      height="300"
+    />
+    <h3>Berlaku hingga 27 Oktober 2023</h3>
+  </div>
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+{% endblock %}
