@@ -5,7 +5,6 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  height: 1600px;
 }
 
 nav {
@@ -13,18 +12,15 @@ nav {
   height: 90px;
   background-color: #fff;
   display: flex;
-  position: fixed;
-  top: 0;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
   padding: 0 240px;
   box-shadow: #d3d3d3 1px 5px 20px;
-  z-index: 99;
 }
 
-nav a img {
+nav img {
   width: 150px;
   height: 50px;
 }
@@ -67,19 +63,56 @@ nav a:hover span {
   gap: 70px;
 }
 
+main h1 {
+  position: relative;
+  text-align: center;
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 48px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* align-items: flex-start;    */
+  gap: 15px;
+}
+.card-body {
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.form-group {
+  text-align: start;
+}
+
+.form-control {
+  border-radius: 10px;
+  border: 2px solid #3545a5;
+  background: rgba(0, 102, 237, 0);
+}
+
 footer {
-  position: sticky;
+  position: fixed;
   bottom: 0;
-  transform: translateY(900px);
   width: 100%;
   height: 260px;
   background-color: #000;
   box-sizing: border-box;
   padding: 50px 240px;
-  -webkit-transform: translateY(300px);
-  -moz-transform: translateY(300px);
-  -ms-transform: translateY(300px);
-  -o-transform: translateY(300px);
 }
 
 .main-footer {
