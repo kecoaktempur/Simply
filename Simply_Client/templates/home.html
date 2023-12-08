@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}" />
+{% endblock %}
+
+{% block title %}
+Selamat Datang
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>
+        PILIH JENIS SIM YANG INGIN ANDA AJUKKAN
+    </h1>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-text">
+                <h1> SIM C </h1>
+                <p>SIM A adalah Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elementum massa justo,
+                    sed ultrices odio posuere nec. Pellentesque varius nulla sed libero interdum, in fermentum urna
+                    sodales. Mauris et justo ullamcorper, egestas purus a, egestas dui.</p>
+            </div>
+            <div class="card-image">
+                <span></span>
+                <img alt="" src="{% static 'img/motor.png'%}">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-text">
+                <h1> SIM A </h1>
+                <p>SIM A adalah Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elementum massa justo,
+                    sed ultrices odio posuere nec. Pellentesque varius nulla sed libero interdum, in fermentum urna
+                    sodales. Mauris et justo ullamcorper, egestas purus a, egestas dui.</p>
+            </div>
+            <div class="card-image">
+                <span></span>
+                <img alt="" src="{% static 'img/mobil.png'%}">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

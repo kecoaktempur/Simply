@@ -1,0 +1,59 @@
+/* File: static/css/home.css */
+.container {
+    margin-top: 40px;
+    box-sizing: border-box;
+    padding: 0 240px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.card {
+    position: relative; /* Add this to make the positioning relative */
+    width: 400px;
+    height: 600px;
+    border-radius: 45px;
+    overflow: hidden;
+}
+
+.card-text {
+    position: absolute;
+    color: #fff;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: justify;
+    padding-left: 55px;
+    transform: translateY(470px);
+    transition: all .5s ease;
+    opacity: 0; /* Set initial opacity to 0 */
+}
+
+.card-text h1 {
+    font-weight: 800;
+    font-size: 99px;
+    margin-bottom: 10px;
+}
+
+.card-image {
+    filter: brightness(20%);
+    transition: all .5s ease;
+}
+
+.card:hover .card-image {
+    filter: brightness(60%);
+    transform: scale(1.1);
+}
+
+.card:hover .card-text {
+    transform: translateY(280px);
+    opacity: 1; /* Set opacity to 1 on hover */
+}
