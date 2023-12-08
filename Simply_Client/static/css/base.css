@@ -5,6 +5,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  height: 1080px;
 }
 
 nav {
@@ -67,13 +68,18 @@ nav a:hover span {
 }
 
 footer {
-  position: fixed;
+  position: absolute;
+  transform: translateY(300px);
   bottom: 0;
   width: 100%;
   height: 260px;
   background-color: #000;
   box-sizing: border-box;
   padding: 50px 240px;
+  -webkit-transform: translateY(300px);
+  -moz-transform: translateY(300px);
+  -ms-transform: translateY(300px);
+  -o-transform: translateY(300px);
 }
 
 .main-footer {
