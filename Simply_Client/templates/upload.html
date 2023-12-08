@@ -6,7 +6,7 @@
   }
 
   .container {
-    margin-top: 25px;
+    margin-top: 140px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -15,27 +15,34 @@
   }
 
   .container h1 {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+  }
+
+  .content {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .main {
     height: 120px;
-    width: 50%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    margin: 8px;
+    padding: 8px;
   }
 
   .wrapper {
     height: 80px;
     width: 100%;
     position: relative;
-    border: 3px solid #0e65d9;
+    outline: 3px solid #0e65d9;
     border-radius: 10px;
     margin: 10px 0;
-    padding: 1%;
   }
 
   .button-wrapper {
@@ -48,7 +55,7 @@
   .upload-button {
     height: 60px;
     width: 270px;
-    border-radius: 11px;
+    border-radius: 10px;
     border: none;
     background: #d9d9d9;
     color: black;
@@ -58,7 +65,7 @@
     outline: none;
     transition: 0.3s;
     right: 0;
-    transform: translateX(-5px);
+    transform: translateX(-7px);
   }
 
   .upload-button:hover {
@@ -68,7 +75,7 @@
 
   .submit-button {
     height: 60px;
-    width: 50%;
+    width: 34%;
     border-radius: 11px;
     border: none;
     background: #0e65d9;
@@ -88,39 +95,45 @@
 
 <div class="container">
   <h1>Unggah Dokumen Kelengkapan</h1>
-  <div class="main">
-    <h3>Kartu Tanda Penduduk</h3>
-    <div class="wrapper">
-      <div class="button-wrapper">
-        <button class="upload-button">Upload File</button>
+  <div class="content">
+    <div class="main">
+      <h3>Kartu Tanda Penduduk</h3>
+      <div class="wrapper">
+        <div class="button-wrapper">
+          <button class="upload-button">Upload File</button>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <h3>Surat Keterangan Sehat</h3>
+      <div class="wrapper">
+        <div class="button-wrapper">
+          <button class="upload-button">Upload File</button>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <h3>Pas Foto 3x4</h3>
+      <div class="wrapper">
+        <div class="button-wrapper">
+          <button class="upload-button">Upload File</button>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <h3>Scan Tanda Tangan</h3>
+      <div class="wrapper">
+        <div class="button-wrapper">
+          <button class="upload-button">Upload File</button>
+        </div>
       </div>
     </div>
   </div>
-  <div class="main">
-    <h3>Surat Keterangan Sehat</h3>
-    <div class="wrapper">
-      <div class="button-wrapper">
-        <button class="upload-button">Upload File</button>
-      </div>
-    </div>
-  </div>
-  <div class="main">
-    <h3>Pas Foto 3x4</h3>
-    <div class="wrapper">
-      <div class="button-wrapper">
-        <button class="upload-button">Upload File</button>
-      </div>
-    </div>
-  </div>
-  <div class="main">
-    <h3>Scan Tanda Tangan</h3>
-    <div class="wrapper">
-      <div class="button-wrapper">
-        <button class="upload-button">Upload File</button>
-      </div>
-    </div>
-  </div>
-  <button class="submit-button">Berikutnya</button>
+  <button class="submit-button">
+    <a>
+      Berikutnya
+    </a>
+  </button>
 </div>
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

@@ -23,7 +23,7 @@ nav {
   z-index: 99;
 }
 
-nav img {
+nav a img {
   width: 150px;
   height: 50px;
 }
@@ -68,7 +68,6 @@ nav a:hover span {
 
 footer {
   position: sticky;
-  /* transform: translateY(300px); */
   bottom: 0;
   width: 100%;
   height: 260px;
