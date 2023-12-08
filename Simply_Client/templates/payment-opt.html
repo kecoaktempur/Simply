@@ -1,0 +1,85 @@
+{% extends "base.html" %} {% load static %} {% block style %}
+<link rel="stylesheet" href="{% static 'css/payment-opt.css' %}" />
+{% endblock %} {% block title %} Welcome {% endblock %} {% block content %}
+
+<link rel="stylesheet" href="regis-style.css" />
+
+<title>Pembayaran</title>
+
+<div class="title">
+  <h1>Pembayaran</h1>
+  <div class="main">
+    <div class="payment">
+      <h2>Pilih metode pembayaran</h2>
+      <div class="paymentgroup">
+        <div class="opt">
+          <img
+            src="static\img\BNI Bank Negara Indonesia 1.png"
+            alt="Flowers in Chania"
+          />
+        </div>
+        <div class="arrow">
+          <img src="static\img\Vector 2.png" alt="Flowers in Chania" />
+        </div>
+      </div>
+      <div class="paymentgroup">
+        <div class="opt">
+          <img src="static\img\Bank BRI 1.png" alt="Flowers in Chania" />
+        </div>
+        <div class="arrow">
+          <img src="static\img\Vector 2.png" alt="Flowers in Chania" />
+        </div>
+      </div>
+      <div class="paymentgroup">
+        <div class="opt">
+          <img
+            src="static\img\Bank_Mandiri_logo 1.png"
+            alt="Flowers in Chania"
+          />
+        </div>
+        <div class="arrow">
+          <img src="static\img\Vector 2.png" alt="Flowers in Chania" />
+        </div>
+      </div>
+      <div class="paymentgroup">
+        <div class="opt">
+          <img src="static\img\logo-bank-bca 2.png" alt="Flowers in Chania" />
+        </div>
+        <div class="arrow">
+          <img src="static\img\Vector 2.png" alt="Flowers in Chania" />
+        </div>
+      </div>
+      <div class="paymentgroup">
+        <div class="opt">
+          <img src="static\img\QRIS_logo 1.png" alt="Flowers in Chania" />
+        </div>
+        <div class="arrow">
+          <img src="static\img\Vector 2.png" alt="Flowers in Chania" />
+        </div>
+      </div>
+    </div>
+    <div class="price">
+      <div class="container">
+        <h3>Biaya pembuatan SIM</h3>
+        <div class="content1">
+          <p>
+            Penerbitan SIM oleh Polri dipunggut biaya, besarnya biaya untuk
+            penerbitan SIM sejak diberlakukannya PP No.31 Tahun 2004, tentang
+            Jenis tarif PNBP yang berlaku di Polri dan dijabarkan melalui Surat
+            Keputusan Kapolri No. Pol. : Skep/1008/XII/2004 tanggal 29 Desember
+            2004 tentang Petunjuk Administrasi pengelolaan PNBP
+          </p>
+        </div>
+        <div class="content2">
+          <p>
+            Hati-hati penipuan! Hanya lakukan transaksi melalui metode yang
+            tersedia pada website ini untuk mencegah terjadinya penipuan!
+          </p>
+        </div>
+        <button>Rp. 100.000,00</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
