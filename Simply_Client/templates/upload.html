@@ -1,139 +1,73 @@
-{% extends "base.html" %} {% load static %} {% block style %}
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-  }
+{% extends "base.html" %}
+{% load static %}{% block style%}
+<link rel="stylesheet" href="{% static 'css/upload.css' %}">
+{% endblock %}
 
-  .container {
-    margin-top: 140px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .container h1 {
-    margin-bottom: 60px;
-  }
-
-  .content {
-    width: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .main {
-    height: 120px;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-direction: column;
-    padding: 8px;
-  }
-
-  .wrapper {
-    height: 80px;
-    width: 100%;
-    position: relative;
-    outline: 3px solid #0e65d9;
-    border-radius: 10px;
-    margin: 10px 0;
-  }
-
-  .button-wrapper {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    height: 100%;
-  }
-
-  .upload-button {
-    height: 60px;
-    width: 270px;
-    border-radius: 10px;
-    border: none;
-    background: #d9d9d9;
-    color: black;
-    font-size: 24px;
-    font-family: "Montserrat", sans-serif;
-    cursor: pointer;
-    outline: none;
-    transition: 0.3s;
-    right: 0;
-    transform: translateX(-7px);
-  }
-
-  .upload-button:hover {
-    background: #0e65d9;
-    color: white;
-  }
-
-  .submit-button {
-    height: 60px;
-    width: 34%;
-    border-radius: 11px;
-    border: none;
-    background: #0e65d9;
-    color: white;
-    font-size: 24px;
-    font-family: "Montserrat", sans-serif;
-    cursor: pointer;
-    outline: none;
-    transition: 0.3s;
-  }
-
-  .submit-button:hover {
-    background: #093f85;
-  }
-</style>
-{% endblock %} {% block title %} QRIS {% endblock %} {% block content %}
+{% block title %} Upload Dokumen {% endblock %} {% block content %}
 
 <div class="container">
-  <h1>Unggah Dokumen Kelengkapan</h1>
-  <div class="content">
-    <div class="main">
-      <h3>Kartu Tanda Penduduk</h3>
-      <div class="wrapper">
-        <div class="button-wrapper">
-          <button class="upload-button">Upload File</button>
-        </div>
+  <div class="content-header">
+    <i class="fa-solid fa-chevron-left">Kembali</i>
+    <h3>Unggah DOkumen Kelengkapan</h3>
+  </div>
+  <span></span>
+  <div class="content-ktp">
+    <p>
+      Lengkapi seluruh dokumen kelengkapan untuk segera mendapatkan SIM. Informasi yang telah anda unggah akan kami
+      simpan dengan aman.
+    </p>
+    <div class="content-ktp-note">
+      <div class="warning">
+        Pastikan untuk menggunggah dokumen sesuai ketentuan!
       </div>
+      <p>
+        Kesalahan unggah dokumen akan berakibat pembatalan pembuatan SIM
+      </p>
+      <p>
+        Pemalsuan dokumen dapat berakibat pembatalan pembuatan SIM
+      </p>
     </div>
-    <div class="main">
-      <h3>Surat Keterangan Sehat</h3>
-      <div class="wrapper">
-        <div class="button-wrapper">
-          <button class="upload-button">Upload File</button>
-        </div>
-      </div>
+    <div class="content-ktp-upload">
+      <h1>
+        Kartu Tanda Penduduk
+      </h1>
+      <p>
+        Unggah foto KTP dalam format PDF dengan ukuran maksimal 10MB
+      </p>
+      <form action="" method="post" enctype="multipart/form-data"></form>
     </div>
-    <div class="main">
-      <h3>Pas Foto 3x4</h3>
-      <div class="wrapper">
-        <div class="button-wrapper">
-          <button class="upload-button">Upload File</button>
-        </div>
-      </div>
+    <div class="content-ktp-upload">
+      <h1>
+        Surat Keterangan Sehat
+      </h1>
+      <p>
+        Unggah Surat Keterangan Sehat dalam format PDF dengan ukuran maksimal 10MB
+      </p>
+      <form action="" method="post" enctype="multipart/form-data"></form>
     </div>
-    <div class="main">
-      <h3>Scan Tanda Tangan</h3>
-      <div class="wrapper">
-        <div class="button-wrapper">
-          <button class="upload-button">Upload File</button>
-        </div>
-      </div>
+    <div class="content-ktp-upload">
+      <h1>
+        Pas Foto 3x4
+      </h1>
+      <p>
+        Unggah pas foto dalam format PDF dengan ukuran maksimal 10MB
+      </p>
+      <form action="" method="post" enctype="multipart/form-data"></form>
+    </div>
+    <div class="content-ktp-upload">
+      <h1>
+        Tanda Tangan Digital
+      </h1>
+      <p>
+        Unggah tanda tangan digital anda dalam format pdf dengan ukuran maksimal 10MB
+      </p>
+      <form action="" method="post" enctype="multipart/form-data"></form>
+    </div>
+    <span></span>
+    <div class="content-footer">
+      <input type="submit" value="Simpan dan Lanjutkan" />
     </div>
   </div>
-  <button class="submit-button">
-    <a>
-      Berikutnya
-    </a>
-  </button>
 </div>
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
