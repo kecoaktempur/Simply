@@ -7,7 +7,7 @@
 
 <div class="container">
   <div class="content-header">
-    <a class="content-header-back">
+    <a href="" class="content-header-back">
       <i class="fa-solid fa-chevron-left"></i>
       <p>Kembali</p>
     </a>
@@ -20,15 +20,23 @@
       simpan dengan aman.
     </p>
     <div class="content-ktp-note">
-      <div class="warning">
-        Pastikan untuk menggunggah dokumen sesuai ketentuan!
+      <div class="left-part-warning">
+        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="19" cy="19" r="19" fill="black" />
+          <path
+            d="M17.2148 7.6H20.8308L20.2228 22.928H17.7908L17.2148 7.6ZM19.0388 30.192C18.4414 30.192 17.9401 30 17.5348 29.616C17.1294 29.2107 16.9268 28.72 16.9268 28.144C16.9268 27.568 17.1294 27.088 17.5348 26.704C17.9401 26.2987 18.4414 26.096 19.0388 26.096C19.6361 26.096 20.1268 26.2987 20.5108 26.704C20.8948 27.088 21.0868 27.568 21.0868 28.144C21.0868 28.72 20.8841 29.2107 20.4788 29.616C20.0948 30 19.6148 30.192 19.0388 30.192Z"
+            fill="#FFDE16" />
+        </svg>
       </div>
-      <p>
-        Kesalahan unggah dokumen akan berakibat pembatalan pembuatan SIM
-      </p>
-      <p>
-        Pemalsuan dokumen dapat berakibat pembatalan pembuatan SIM
-      </p>
+      <div class="right-part-warning">
+        Pastikan untuk menggunggah dokumen sesuai ketentuan!
+        <p>
+          <i class="fa-solid fa-circle"></i>Kesalahan unggah dokumen akan berakibat pembatalan pembuatan SIM
+        </p>
+        <p>
+          <i class="fa-solid fa-circle"></i>Pemalsuan dokumen dapat berakibat pembatalan pembuatan SIM
+        </p>
+      </div>
     </div>
     <div class="content-ktp-upload">
       <h1>
@@ -37,7 +45,11 @@
       <p>
         Unggah foto KTP dalam format PDF dengan ukuran maksimal 10MB
       </p>
-      <form action="" method="post" enctype="multipart/form-data"></form>
+      <div class="upload-file">
+        <input type="file" id="file-ktp">
+        <label for="file-ktp">Pilih File</label>
+      </div>
+      <span></span>
     </div>
     <div class="content-ktp-upload">
       <h1>
@@ -46,9 +58,12 @@
       <p>
         Unggah Surat Keterangan Sehat dalam format PDF dengan ukuran maksimal 10MB
       </p>
-      <form action="" method="post" enctype="multipart/form-data"></form>
+      <div class="upload-file">
+        <input type="file" id="file-sks">
+        <label for="file-sks">Pilih File</label>
+      </div>
+      <span></span>
     </div>
-    <span></span>
     <div class="content-ktp-upload">
       <h1>
         Pas Foto 3x4
@@ -56,9 +71,12 @@
       <p>
         Unggah pas foto dalam format PDF dengan ukuran maksimal 10MB
       </p>
-      <form action="" method="post" enctype="multipart/form-data"></form>
+      <div class="upload-file">
+        <input type="file" id="file-pas">
+        <label for="file-pas">Pilih File</label>
+      </div>
+      <span></span>
     </div>
-    <span></span>
     <div class="content-ktp-upload">
       <h1>
         Tanda Tangan Digital
@@ -66,12 +84,17 @@
       <p>
         Unggah tanda tangan digital anda dalam format pdf dengan ukuran maksimal 10MB
       </p>
-      <form action="" method="post" enctype="multipart/form-data"></form>
+      <div class="upload-file">
+        <input type="file" id="file-ttd">
+        <label for="file-ttd">Pilih File</label>
+      </div>
     </div>
-    <span></span>
-    <div class="content-footer">
-      <input type="submit" value="Simpan dan Lanjutkan" />
-    </div>
+  </div>
+  <span></span>
+  <div class="content-footer">
+    <button>
+      <a href="">Simpan dan Lanjutkan</a>
+    </button>
   </div>
 </div>
 
