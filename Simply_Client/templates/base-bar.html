@@ -18,7 +18,7 @@
 
 <body>
     <nav>
-        <a  href="/home">
+        <a href="/home">
             <img src="{% static 'img/Simply Logo.png'%}" alt="logo simply"></a>
         <div class="right-text-place">
             <a href="">Apply<span></span></a>
@@ -28,12 +28,30 @@
     </nav>
     <main>
         <div class="sidebar">
-            <div class="tab">Registrasi Data Diri</div>
-            <div class="tab">Pembayaran</div>
-            <div class="tab">Unggah Dokumen</div>
-            <div class="tab">Validasi Dokumen</div>
-            <div class="tab">Jadwal Test</div>
-            <div class="tab">Pengiriman SIM</div>
+            <a href="" class="tab">
+                <i class="fa-solid fa-user" style="margin-right: 10px;"></i>
+                <h3>Registrasi Data Diri</h3>
+            </a>
+            <a href="" class="tab">
+                <i class="fa-solid fa-wallet" style="margin-right: 10px;"></i>
+                <h3>Pembayaran</h3>
+            </a>
+            <a href="" class="tab">
+                <i class="fa-solid fa-file" style="margin-right: 15px;"></i>
+                <h3>Unggah Dokumen</h3>
+            </a>
+            <a href="" class="tab">
+                <i class="fa-solid fa-file-circle-check" style="margin-right: 10px;"></i>
+                <h3>Validasi Dokumen</h3>
+            </a>
+            <a href="" class="tab">
+                <i class="fa-solid fa-calendar" style="margin-right: 15px;"></i>
+                <h3>Jadwal Test</h3>
+            </a>
+            <a href="" class="tab">
+                <i class="fa-solid fa-truck" style="margin-right: 9px;"></i>
+                <h3>Pengiriman SIM</h3>
+            </a>
         </div>
         {% block content %}
         {% endblock %}

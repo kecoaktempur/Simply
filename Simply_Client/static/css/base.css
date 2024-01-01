@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #0E65D9;
+  --dark-color: #141414;
+  --greyish-color: #D9D9D9;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -42,7 +48,7 @@ nav a {
 nav a span {
   width: 0;
   height: 4px;
-  background-color: #0e65d9;
+  background-color: var(--primary-color);
   bottom: -8px;
   border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -121,4 +127,38 @@ footer {
 
 .tab-contact-us p {
   font-size: 14px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  padding: 150px 240px;
+}
+
+/* sidebar */
+
+.sidebar {
+  width: 460px;
+  margin-right: 70px;
+}
+
+.sidebar .tab {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  border: 1px solid var(--greyish-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+.sidebar .tab i {
+  font-size: larger;
 }
