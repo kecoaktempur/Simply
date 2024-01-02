@@ -1,209 +1,52 @@
-{% extends "base.html" %} {% load static %} {% block style %}
-<link rel="stylesheet" href="{% static 'css/form-reg.css' %}" />
-{% endblock %} {% block title %} Welcome {% endblock %} {% block content %}
+{% extends "base-bar.html" %}
+{% load static %}{% block style%}
+<link rel="stylesheet" href="{% static 'css/form-reg.css' %}">
+{% endblock %}
+{% block title %} Registrasi Data Diri {% endblock %} {% block content %}
 
-<link
-  rel="stylesheet"
-  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-/>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<title>Formulis Registrasi</title>
-
-<h1>FORMULIR REGISTRASI</h1>
-<form>
-  <div class="card-body">
-    <div class="form-group">
-      <label for="nama">Nama Lengkap</label>
-      <input
-        type="text"
-        id="nama"
-        name="nama"
-        class="form-control"
-        style="
-          border: 2px solid #3545a5;
-          background: rgba(0, 102, 237, 0);
-          border-radius: 10px;
-          width: 758px;
-          height: 60px;
-          flex-shrink: 0;
-        "
-      />
+<div class="container">
+  <div class="container">
+    <div class="content-header">
+      <a href="" class="content-header-back">
+        <i class="fa-solid fa-chevron-left"></i>
+        <p>Kembali</p>
+      </a>
+      <h2>Registrasi Data Diri</h2>
     </div>
-    <div class="form-group">
-      <label for="alamat">Alamat Domisili</label>
-      <input
-        type="text"
-        id="alamat"
-        name="alamat"
-        class="form-control"
-        style="
-          border: 2px solid #3545a5;
-          background: rgba(0, 102, 237, 0);
-          border-radius: 10px;
-          width: 758px;
-          height: 60px;
-          flex-shrink: 0;
-        "
-      />
+    <span></span>
+    <div class="content-ktp">
+      <p>
+        Lengkapi seluruh formulir untuk dapat melanjutkan ke tahap selanjutnya. Informasi yang telah anda masukkan akan
+        kami simpan dengan aman.
+      </p>
     </div>
-    <div class="form-group">
-      <label for="kota">Kota / Kabupaten</label>
-      <select
-        id="kota"
-        name="kota"
-        class="form-control"
-        style="
-          border: 2px solid #3545a5;
-          background: rgba(0, 102, 237, 0);
-          border-radius: 10px;
-          width: 758px;
-          height: 60px;
-          flex-shrink: 0;
-        "
-      >
-        <option value="Surabaya">Surabaya</option>
-        <option value="Malang">Malang</option>
-        <option value="Sidoarjo">Sidoarjo</option>
-        <option value="Lamongan">Lamongan</option>
-        <option value="Gresik">Gresik</option>
-      </select>
+    <div class="content-form">
+      <span></span>
     </div>
-    <div class="form-group">
-      <label for="kecamatan">Kecamatan</label>
-      <select
-        id="kecamatan"
-        name="kecamatan"
-        class="form-control"
-        style="
-          border: 2px solid #3545a5;
-          background: rgba(0, 102, 237, 0);
-          border-radius: 10px;
-          width: 758px;
-          height: 60px;
-          flex-shrink: 0;
-        "
-      >
-        <option value="Mulyorejo">Mulyorejo</option>
-        <option value="Rungkut">Rungkut</option>
-        <option value="Gunung Anyar">Gunung Anyar</option>
-        <option value="Sukolilo">Sukolilo</option>
-        <option value="Tambaksari">Tambaksari</option>
-      </select>
+    <div class="content-form">
+      <span></span>
     </div>
-    <div class="form-group">
-      <label for="desa">Desa / Kelurahan</label>
-      <select
-        id="desa"
-        name="desa"
-        class="form-control"
-        style="
-          border: 2px solid #3545a5;
-          background: rgba(0, 102, 237, 0);
-          border-radius: 10px;
-          width: 758px;
-          height: 60px;
-          flex-shrink: 0;
-        "
-      >
-        <option value="Kejawan Putih Tambak">Kejawan Putih Tambak</option>
-        <option value="Kalijudan">Kalijudan</option>
-        <option value="Mulyorejo">Mulyorejo</option>
-        <option value="Kejawan Putih Mulya">Kejawan Putih Mulya</option>
-        <option value="Klampis Ngasem">Klampis Ngasem</option>
-      </select>
+    <div class="content-form">
+      <span></span>
     </div>
-    <div class="form-group">
-      <label for="tanggal">Tanggal Lahir</label>
-      <select
-        id="tanggal"
-        name="tanggal"
-        class="form-control"
-        style="
-          border: 2px solid #3545a5;
-          background: rgba(0, 102, 237, 0);
-          border-radius: 10px;
-          width: 758px;
-          height: 60px;
-          flex-shrink: 0;
-        "
-      >
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        ...(omitted)...
-        <option value="31">31</option>
-      </select>
+    <div class="content-form">
+      <span></span>
     </div>
-    <div class="form-group">
-      <label for="rt">RT</label>
-      <input
-        type="text"
-        id="rt"
-        name="rt"
-        class="form-control"
-        style="
-          border: 2px solid #3545a5;
-          background: rgba(0, 102, 237, 0);
-          border-radius: 10px;
-          width: 758px;
-          height: 60px;
-          flex-shrink: 0;
-        "
-      />
+    <div class="content-form">
+      <span></span>
     </div>
-    <div class="form-group">
-      <label for="rw">RW</label>
-      <input
-        type="text"
-        id="rw"
-        name="rw"
-        class="form-control"
-        style="
-          border: 2px solid #3545a5;
-          background: rgba(0, 102, 237, 0);
-          border-radius: 10px;
-          width: 758px;
-          height: 60px;
-          flex-shrink: 0;
-        "
-      />
+    <div class="content-form">
+      <span></span>
     </div>
-    <div class="form-group">
-      <label for="kodepos">Kode Pos</label>
-      <input
-        type="text"
-        id="kodepos"
-        name="kodepos"
-        class="form-control"
-        style="
-          border: 2px solid #3545a5;
-          background: rgba(0, 102, 237, 0);
-          border-radius: 10px;
-          width: 758px;
-          height: 60px;
-          flex-shrink: 0;
-        "
-      />
+    <div class="content-form">
+      <span></span>
     </div>
-    <div class="form-group">
-      <label for="keterangan">Beri Keterangan</label>
-      <input
-        type="text"
-        id="keterangan"
-        name="keterangan"
-        class="form-control"
-        style="
-          border: 2px solid #3545a5;
-          background: rgba(0, 102, 237, 0);
-          border-radius: 10px;
-          width: 758px;
-          height: 60px;
-          flex-shrink: 0;
-        "
-      />
+    <div class="content-footer">
+      <button>
+        <a href="">Simpan dan Lanjutkan</a>
+      </button>
     </div>
   </div>
-</form>
+</div>
 
 {% endblock %}
