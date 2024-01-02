@@ -5,47 +5,65 @@
 {% block title %} Registrasi Data Diri {% endblock %} {% block content %}
 
 <div class="container">
-  <div class="container">
-    <div class="content-header">
-      <a href="" class="content-header-back">
-        <i class="fa-solid fa-chevron-left"></i>
-        <p>Kembali</p>
-      </a>
-      <h2>Registrasi Data Diri</h2>
-    </div>
-    <span></span>
-    <div class="content-ktp">
-      <p>
-        Lengkapi seluruh formulir untuk dapat melanjutkan ke tahap selanjutnya. Informasi yang telah anda masukkan akan
-        kami simpan dengan aman.
-      </p>
-    </div>
-    <div class="content-form">
+  <div class="content-header">
+    <a href="" class="content-header-back">
+      <i class="fa-solid fa-chevron-left"></i>
+      <p>Kembali</p>
+    </a>
+    <h2>Registrasi Data Diri</h2>
+  </div>
+  <span></span>
+  <div class="content-ktp">
+    <p>
+      Lengkapi seluruh formulir untuk dapat melanjutkan ke tahap selanjutnya. Informasi yang telah anda masukkan akan
+      kami simpan dengan aman.
+    </p>
+  </div>
+  <div class="content-form">
+    <div class="content-input">
+      <label for="form-nama">Nama Lengkap</label>
+      <input type="text" id="form-nama" placeholder="Nama Lengkap">
       <span></span>
     </div>
-    <div class="content-form">
+    <div class="content-input">
+      <label for="form-gender">Jenis Kelamin</label>
+      <input type="text" id="form-gender" placeholder="Jenis Kelamin">
       <span></span>
     </div>
-    <div class="content-form">
+    <div class="content-input">
+      <label for="form-birthplace">Tempat Kelahiran</label>
+      <input type="text" id="form-birthplace" placeholder="Tempat Kelahiran">
       <span></span>
     </div>
-    <div class="content-form">
+    <div class="content-input">
+      <label for="">Tanggal Lahir</label>
+      <div class="content-form-input">
+        <input type="number" id="day" min="1" max="31" placeholder="Hari">
+        <input type="number" id="month" min="1" max="12" placeholder="Bulan">
+        <input type="number" id="year" min="1990" max="2007" placeholder="Tahun">
+      </div>
       <span></span>
     </div>
-    <div class="content-form">
+    <div class="content-input">
+      <label for="form-nik">Nomer Induk Kewarganegaraan</label>
+      <input type="text" id="form-nik" placeholder="Nomer Induk Kewarganegaraan">
       <span></span>
     </div>
-    <div class="content-form">
+    <div class="content-input">
+      <label for="">Tempat Tinggal</label>
+      <div class="content-form-input">
+        <input type="text" id="provinsi" placeholder="Provinsi">
+        <input type="text" id="kabupaten" placeholder="Kota/Kabupaten">
+        <input type="text" id="kecamatan" placeholder="Kecamatan">
+      </div>
+      <input type="text" id="alamatlengkap" placeholder="Alamat Lengkap Sesuai KTP">
       <span></span>
     </div>
-    <div class="content-form">
-      <span></span>
-    </div>
-    <div class="content-footer">
-      <button>
-        <a href="">Simpan dan Lanjutkan</a>
-      </button>
-    </div>
+  </div>
+  <div class="content-footer">
+    <button>
+      <a href="">Simpan dan Lanjutkan</a>
+    </button>
   </div>
 </div>
 
