@@ -9,7 +9,8 @@ def home(request):
 
 def tracking(request):
     active_link = 'tracking'
-    return render(request, 'tracking.html', {'active_link': active_link})
+    done_state = True
+    return render(request, 'tracking.html', {'active_link': active_link, 'done_state': done_state})
 
 
 def trackingDone(request):
@@ -22,7 +23,8 @@ def qris(request):
 
 def upload(request):
     active_link = 'upload'
-    return render(request, 'upload.html', {'active_link': active_link})
+    done_state = True
+    return render(request, 'upload.html', {'active_link': active_link, 'done_state': done_state})
 
 
 def trackingDone(request):
@@ -35,9 +37,11 @@ def qris(request):
 
 def formRegis(request):
     active_link = 'registration'
-    return render(request, 'form-reg.html', {'active_link': active_link})
+    done_state = True
+    return render(request, 'form-reg.html', {'active_link': active_link, 'done_state': done_state})
 
 
 def payment(request):
     active_link = 'payment'
-    return render(request, 'payment-opt.html', {'active_link': active_link})
+    done_state = True
+    return render(request, 'payment-opt.html', {'active_link': active_link, 'done_state': done_state})
