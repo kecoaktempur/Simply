@@ -20,7 +20,8 @@ def qris(request):
 
 
 def upload(request):
-    return render(request, 'upload.html')
+    active_link = 'upload'
+    return render(request, 'upload.html', {'active_link': active_link})
 
 
 def tracking(request):
@@ -35,11 +36,10 @@ def qris(request):
     return render(request, 'qris.html')
 
 
-def upload(request):
-    return render(request, 'upload.html')
-
 def formRegis(request):
-    return render(request, 'form-reg.html')
+    active_link = 'registration'
+    return render(request, 'form-reg.html', {'active_link': active_link})
+
 
 def payment(request):
     return render(request, 'payment-opt.html')

@@ -157,8 +157,31 @@ main {
   cursor: pointer;
   color: var(--dark-color);
   text-decoration: none;
+  justify-content: space-between;
+}
+
+.sidebar .tab .tab-content {
+  display: flex;
 }
 
 .sidebar .tab i {
   font-size: larger;
+}
+
+.sidebar .tab.active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.sidebar .tab.active i:nth-child(2) {
+  color: var(--primary-color);
+}
+
+.sidebar .tab.done i:nth-child(2) {
+  color: #fff;
+}
+
+.sidebar .tab.done {
+  background-color: var(--primary-color);
+  color: #fff;
 }

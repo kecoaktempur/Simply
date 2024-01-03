@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,400&display=swap"
         rel="stylesheet">
+
     {% load static %}
     {% block style%}{% endblock %}
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
@@ -28,29 +29,49 @@
     </nav>
     <main>
         <div class="sidebar">
-            <a href="" class="tab">
-                <i class="fa-solid fa-user" style="margin-right: 10px;"></i>
-                <h3>Registrasi Data Diri</h3>
+            <a href="{% url 'Simply_Client:registration' %}" id="registrationLink"
+                class="tab{% if active_link == 'registration' %} active{% endif %}">
+                <div class="tab-content">
+                    <i class="fa-solid fa-user" style="margin-right: 10px;"></i>
+                    <h3>Registrasi Data Diri</h3>
+                </div>
+                <i class="fa-solid fa-check"></i>
             </a>
-            <a href="" class="tab">
-                <i class="fa-solid fa-wallet" style="margin-right: 10px;"></i>
-                <h3>Pembayaran</h3>
+            <a href="{% url 'Simply_Client:payment' %}" id="paymentLink" class="tab">
+                <div class="tab-content">
+                    <i class="fa-solid fa-wallet" style="margin-right: 10px;"></i>
+                    <h3>Pembayaran</h3>
+                </div>
+                <i class="fa-solid fa-check"></i>
             </a>
-            <a href="" class="tab" style="background-color: #0E65D9; color: #fff; ">
-                <i class="fa-solid fa-file" style="margin-right: 15px; "></i>
-                <h3>Unggah Dokumen</h3>
+            <a href="{% url 'Simply_Client:upload' %}" id="uploadLink"
+                class="tab{% if active_link == 'upload' %} active{% endif %}">
+                <div class="tab-content">
+                    <i class="fa-solid fa-file" style="margin-right: 15px; "></i>
+                    <h3>Unggah Dokumen</h3>
+                </div>
+                <i class="fa-solid fa-check"></i>
             </a>
-            <a href="" class="tab">
-                <i class="fa-solid fa-file-circle-check" style="margin-right: 10px;"></i>
-                <h3>Validasi Dokumen</h3>
+            <a href="" class="tab" id="validationLink">
+                <div class="tab-content">
+                    <i class="fa-solid fa-file-circle-check" style="margin-right: 10px;"></i>
+                    <h3>Validasi Dokumen</h3>
+                </div>
+                <i class="fa-solid fa-check"></i>
             </a>
-            <a href="" class="tab">
-                <i class="fa-solid fa-calendar" style="margin-right: 15px;"></i>
-                <h3>Jadwal Test</h3>
+            <a href="" class="tab" id="scheduleLink">
+                <div class="tab-content">
+                    <i class="fa-solid fa-calendar" style="margin-right: 15px;"></i>
+                    <h3>Jadwal Test</h3>
+                </div>
+                <i class="fa-solid fa-check"></i>
             </a>
-            <a href="" class="tab">
-                <i class="fa-solid fa-truck" style="margin-right: 9px;"></i>
-                <h3>Pengiriman SIM</h3>
+            <a href="{% url 'Simply_Client:tracking' %}" class="tab" id="trackingLink">
+                <div class="tab-content">
+                    <i class="fa-solid fa-truck" style="margin-right: 9px;"></i>
+                    <h3>Pengiriman SIM</h3>
+                </div>
+                <i class="fa-solid fa-check"></i>
             </a>
         </div>
         {% block content %}
@@ -107,6 +128,26 @@
             </div>
         </div>
     </footer>
+
+    {% block script %}
+    <script>
+        var registrationLink = document.getElementById('registrationLink');
+        var paymentLink = document.getElementById('paymentLink');
+        var uploadLink = document.getElementById('uploadLink');
+        var validationLink = document.getElementById('validationLink');
+        var scheduleLink = document.getElementById('scheduleLink');
+        var trackingLink = document.getElementById('trackingLink');
+
+        uploadLink.addEventListener('click', function () {
+            uploadLink.classList.add('active');
+            registrationLink.classList.remove('active')
+            registrationLink.classList.add('done')
+        });
+    </script>
+
+    {% endblock %}
+
 </body>
+
 
 </html>
