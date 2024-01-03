@@ -1,4 +1,4 @@
-{% extends "base.html" %} {% load static %} {% block style %}
+{% extends "base-bar.html" %} {% load static %} {% block style %}
 <link rel="stylesheet" href="{% static 'css/payment-opt.css' %}" />
 {% endblock %} {% block title %} Welcome {% endblock %} {% block content %}
 
@@ -6,17 +6,44 @@
 
 <title>Pembayaran</title>
 
-<div class="title">
-  <h1>Pembayaran</h1>
+<div class="container">
+  <div class="content-header">
+    <a href="" class="content-header-back">
+      <i class="fa-solid fa-chevron-left"></i>
+      <p>Kembali</p>
+    </a>
+    <h2>Pembayaran</h2>
+  </div>
+  <span></span>
+  <div class="content-ktp">
+    <h3>Biaya Pembuatan SIM</h3>
+    <p>
+      Penerbitan SIM oleh Polri dipunggut biaya, besarnya biaya untuk penerbitan SIM sejak diberlakukannya PP No.31
+      Tahun 2004, tentang Jenis tarif PNBP yang berlaku di Polri dan dijabarkan melalui Surat Keputusan Kapolri No. Pol.
+      : Skep/1008/XII/2004 tanggal 29 Desember 2004 tentang Petunjuk Administrasi pengelolaan PNBP
+    </p>
+    <div class="content-ktp-note">
+      <div class="left-part-warning">
+        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="19" cy="19" r="19" fill="black" />
+          <path
+            d="M17.2148 7.6H20.8308L20.2228 22.928H17.7908L17.2148 7.6ZM19.0388 30.192C18.4414 30.192 17.9401 30 17.5348 29.616C17.1294 29.2107 16.9268 28.72 16.9268 28.144C16.9268 27.568 17.1294 27.088 17.5348 26.704C17.9401 26.2987 18.4414 26.096 19.0388 26.096C19.6361 26.096 20.1268 26.2987 20.5108 26.704C20.8948 27.088 21.0868 27.568 21.0868 28.144C21.0868 28.72 20.8841 29.2107 20.4788 29.616C20.0948 30 19.6148 30.192 19.0388 30.192Z"
+            fill="#FFDE16" />
+        </svg>
+      </div>
+      <div class="right-part-warning">
+        Hati-hati penipuan! Hanya lakukan transaksi melalui metode yang tersedia pada website ini untuk mencegah
+        terjadinya penipuan!
+      </div>
+    </div>
+  </div>
+  <!-- <h1>Pembayaran</h1>
   <div class="main">
     <div class="payment">
       <h2>Pilih metode pembayaran</h2>
       <div class="paymentgroup">
         <div class="opt">
-          <img
-            src="static\img\BNI Bank Negara Indonesia 1.png"
-            alt="Flowers in Chania"
-          />
+          <img src="static\img\BNI Bank Negara Indonesia 1.png" alt="Flowers in Chania" />
         </div>
         <div class="arrow">
           <img src="static\img\Vector 2.png" alt="Flowers in Chania" />
@@ -32,10 +59,7 @@
       </div>
       <div class="paymentgroup">
         <div class="opt">
-          <img
-            src="static\img\Bank_Mandiri_logo 1.png"
-            alt="Flowers in Chania"
-          />
+          <img src="static\img\Bank_Mandiri_logo 1.png" alt="Flowers in Chania" />
         </div>
         <div class="arrow">
           <img src="static\img\Vector 2.png" alt="Flowers in Chania" />
@@ -79,7 +103,7 @@
         <button>Rp. 100.000,00</button>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 
 {% endblock %}

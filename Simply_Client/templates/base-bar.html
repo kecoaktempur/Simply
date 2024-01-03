@@ -37,7 +37,8 @@
                 </div>
                 <i class="fa-solid fa-check"></i>
             </a>
-            <a href="{% url 'Simply_Client:payment' %}" id="paymentLink" class="tab">
+            <a href="{% url 'Simply_Client:payment' %}" id="paymentLink"
+                class="tab{% if active_link == 'payment' %} active{% endif %}">
                 <div class="tab-content">
                     <i class="fa-solid fa-wallet" style="margin-right: 10px;"></i>
                     <h3>Pembayaran</h3>
@@ -138,10 +139,23 @@
         var scheduleLink = document.getElementById('scheduleLink');
         var trackingLink = document.getElementById('trackingLink');
 
+        registrationLink.addEventListener('click', function () {
+            registrationLink.classList.add('active');
+        })
+        paymentLink.addEventListener('click', function () {
+            paymentLink.classList.add('active');
+        });
         uploadLink.addEventListener('click', function () {
             uploadLink.classList.add('active');
-            registrationLink.classList.remove('active')
-            registrationLink.classList.add('done')
+        });
+        validationLink.addEventListener('click', function () {
+            validationLink.classList.add('active');
+        });
+        scheduleLink.addEventListener('click', function () {
+            scheduleLink.classList.add('active');
+        });
+        trackingLink.addEventListener('click', function () {
+            trackingLink.classList.add('active');
         });
     </script>
 
