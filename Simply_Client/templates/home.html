@@ -14,7 +14,7 @@ Selamat Datang
         PILIH JENIS SIM YANG INGIN ANDA AJUKKAN
     </h1>
     <div class="card-container">
-        <div class="card">
+        <a class="card" href="{% url 'Simply_Client:registration' %}">
             <div class="card-text">
                 <h1> SIM C </h1>
                 <p>SIM A adalah Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elementum massa justo,
@@ -25,8 +25,8 @@ Selamat Datang
                 <span></span>
                 <img alt="" src="{% static 'img/motor.png'%}">
             </div>
-        </div>
-        <div class="card">
+        </a>
+        <a class="card" href="{% url 'Simply_Client:registration' %}">
             <div class="card-text">
                 <h1> SIM A </h1>
                 <p>SIM A adalah Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elementum massa justo,
@@ -37,7 +37,7 @@ Selamat Datang
                 <span></span>
                 <img alt="" src="{% static 'img/mobil.png'%}">
             </div>
-        </div>
+        </a>
     </div>
 </div>
 </div>

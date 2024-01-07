@@ -1,10 +1,6 @@
 {% extends "base-bar.html" %} {% load static %} {% block style %}
 <link rel="stylesheet" href="{% static 'css/payment-opt.css' %}" />
-{% endblock %} {% block title %} Welcome {% endblock %} {% block content %}
-
-<link rel="stylesheet" href="regis-style.css" />
-
-<title>Pembayaran</title>
+{% endblock %} {% block title %} Payment {% endblock %} {% block content %}
 
 <div class="container">
   <div class="content-header">
@@ -34,6 +30,35 @@
       <div class="right-part-warning">
         Hati-hati penipuan! Hanya lakukan transaksi melalui metode yang tersedia pada website ini untuk mencegah
         terjadinya penipuan!
+      </div>
+    </div>
+    <div class="content-nominal">
+      <h1>Rp100.000,00</h1>
+    </div>
+    <span></span>
+    <div class="content-paymethod">
+      <h3>
+        Pilih Metode Pembayaran
+      </h3>
+      <div class="payment-method">
+        <img src="{% static 'img/BNI Bank Negara Indonesia 1.png' %}" alt="#">
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+      <div class="payment-method">
+        <img src="{% static 'img/Bank BRI 1.png' %}" alt="#">
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+      <div class="payment-method">
+        <img src="{% static 'img/logo-bank-bca 2.png' %}" alt="#">
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+      <div class="payment-method">
+        <img src="{% static 'img/Bank_Mandiri_logo 1.png' %}" alt="#">
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+      <div class="payment-method">
+        <img src="{% static 'img/QRIS_logo 1.png' %}" alt="#">
+        <i class="fa-solid fa-chevron-right"></i>
       </div>
     </div>
   </div>
