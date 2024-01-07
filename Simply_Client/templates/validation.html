@@ -1,6 +1,9 @@
-{% extends "base-bar.html" %} {% load static %} {% block style %}
+{% extends "base-bar.html" %}
+{% load static %} {% block style %}
 <link rel="stylesheet" href="{% static 'css/validation.css' %}" />
-{% endblock %} {% block title %} Document Validation {% endblock %}
+{% endblock %}
+{% block title %} Validasi Dokumen {% endblock %}
+{% block content %}
 
 <div class="container">
     <div class="content-header">
@@ -12,6 +15,14 @@
     </div>
     <span></span>
     <div class="content-ktp">
-
+        <p>
+            Dokumen akan diverifikasi/validasi dalam kurun waktu 2x24 jam. Lakukan pengecekan rutin agar informasi hasil
+            tidak terlewat
+        </p>
+        <div class="content-ktp-note">
+            <h4>Dokumen Masih Dalam Proses Validasi</h4>
+        </div>
     </div>
 </div>
+
+{% endblock %}
