@@ -1,13 +1,14 @@
 {% extends "base-bar.html" %}
 {% load static %} {% block style %}
 <link rel="stylesheet" href="{% static 'css/tracking.css' %}" />
+<link rel="shortcut icon" href="{% static 'img/korlantas.png' %}" type="image/x-icon">
 {% endblock %}
 {% block title %} Pengiriman SIM {% endblock %}
 {% block content %}
 
 <div class="container">
   <div class="content-header">
-    <a href="" class="content-header-back">
+    <a href="{% url 'Simply_Client:schedule' %}" class="content-header-back">
       <i class="fa-solid fa-chevron-left"></i>
       <p>Kembali</p>
     </a>
