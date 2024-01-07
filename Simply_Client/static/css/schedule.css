@@ -45,3 +45,45 @@
 .container .content-ktp {
     padding: 10px 30px 30px 30px;
 }
+
+
+/* content-footer */
+.content-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px 30px 30px;
+}
+
+.content-footer button {
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+.content-footer button a {
+    text-decoration: none;
+    color: var(--light-color);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.content-footer button:hover {
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+}
+
+.content-footer button:hover a {
+    color: var(--primary-color);
+}
