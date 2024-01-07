@@ -32,7 +32,9 @@ def trackingDone(request):
 
 
 def qris(request):
-    return render(request, 'qris.html')
+    active_link = 'payment'
+    done_state = True
+    return render(request, 'qris.html', {'active_link': active_link, 'done_state': done_state})
 
 
 def formRegis(request):
