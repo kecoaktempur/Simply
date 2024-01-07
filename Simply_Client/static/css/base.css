@@ -171,11 +171,10 @@ main {
   color: var(--primary-color);
 }
 
-.sidebar .tab.done i:nth-child(2) {
+.sidebar .tab i:nth-child(2) {
   color: #fff;
 }
 
-.sidebar .tab.done {
-  background-color: var(--primary-color);
-  color: #fff;
+.sidebar .tab.done i:nth-child(2) {
+  color: #000;
 }

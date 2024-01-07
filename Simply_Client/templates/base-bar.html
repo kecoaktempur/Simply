@@ -30,7 +30,7 @@
     <main>
         <div class="sidebar">
             <a href="{% url 'Simply_Client:registration' %}" id="registrationLink"
-                class="tab{% if active_link == 'registration' %} active{% endif %}">
+                class="tab{% if active_link == 'registration' %} active{% endif %}{% if active_link == 'payment' %} done{% endif %}{% if active_link == 'payment' %} done{% endif %}{% if active_link == 'upload' %} done{% endif %}{% if active_link == 'validation' %} done{% endif %}{% if active_link == 'schedule' %} done{% endif %}{% if active_link == 'tracking' %} done{% endif %}">
                 <div class="tab-content">
                     <i class="fa-solid fa-user" style="margin-right: 10px;"></i>
                     <h3>Registrasi Data Diri</h3>
@@ -38,7 +38,7 @@
                 <i class="fa-solid fa-check"></i>
             </a>
             <a href="{% url 'Simply_Client:payment' %}" id="paymentLink"
-                class="tab{% if active_link == 'payment' %} active{% endif %}">
+                class="tab{% if active_link == 'payment' %} active{% endif %}{% if active_link == 'upload' %} done{% endif %}{% if active_link == 'upload' %} done{% endif %}{% if active_link == 'validation' %} done{% endif %}{% if active_link == 'schedule' %} done{% endif %}{% if active_link == 'tracking' %} done{% endif %}">
                 <div class="tab-content">
                     <i class="fa-solid fa-wallet" style="margin-right: 10px;"></i>
                     <h3>Pembayaran</h3>
@@ -46,7 +46,7 @@
                 <i class="fa-solid fa-check"></i>
             </a>
             <a href="{% url 'Simply_Client:upload' %}" id="uploadLink"
-                class="tab{% if active_link == 'upload' %} active{% endif %}">
+                class="tab{% if active_link == 'upload' %} active{% endif %}{% if active_link == 'validation' %} done{% endif %}{% if active_link == 'validation' %} done{% endif %}{% if active_link == 'schedule' %} done{% endif %}{% if active_link == 'tracking' %} done{% endif %}">
                 <div class="tab-content">
                     <i class="fa-solid fa-file" style="margin-right: 15px; "></i>
                     <h3>Unggah Dokumen</h3>
@@ -54,14 +54,15 @@
                 <i class="fa-solid fa-check"></i>
             </a>
             <a href="{% url 'Simply_Client:validation' %}"
-                class="tab{% if active_link == 'validation' %} active{% endif %}" id="validationLink">
+                class="tab{% if active_link == 'validation' %} active{% endif %}{% if active_link == 'schedule' %} done{% endif %}{% if active_link == 'tracking' %} done{% endif %}">
                 <div class="tab-content">
                     <i class="fa-solid fa-file-circle-check" style="margin-right: 10px;"></i>
                     <h3>Validasi Dokumen</h3>
                 </div>
                 <i class="fa-solid fa-check"></i>
             </a>
-            <a href="{% url 'Simply_Client:schedule' %}" class="tab{% if active_link == 'schedule' %} active{% endif %}"
+            <a href="{% url 'Simply_Client:schedule' %}"
+                class="tab{% if active_link == 'schedule' %} active{% endif %}{% if active_link == 'tracking' %} done{% endif %}"
                 id="scheduleLink">
                 <div class="tab-content">
                     <i class="fa-solid fa-calendar" style="margin-right: 15px;"></i>
@@ -69,7 +70,8 @@
                 </div>
                 <i class="fa-solid fa-check"></i>
             </a>
-            <a href="{% url 'Simply_Client:tracking' %}" class="tab{% if active_link == 'tracking' %} active{% endif %}"
+            <a href="{% url 'Simply_Client:tracking' %}"
+                class="tab{% if active_link == 'tracking' %} active{% endif %}{% if active_link == '' %} done{% endif %}"
                 id="trackingLink">
                 <div class="tab-content">
                     <i class="fa-solid fa-truck" style="margin-right: 9px;"></i>
@@ -144,21 +146,27 @@
 
         registrationLink.addEventListener('click', function () {
             registrationLink.classList.add('active');
+            registrationLink.classList.remove('done');
         })
         paymentLink.addEventListener('click', function () {
             paymentLink.classList.add('active');
+            registrationLink.classList.add('done');
         });
         uploadLink.addEventListener('click', function () {
             uploadLink.classList.add('active');
+            paymentLink.classList.add('done');
         });
         validationLink.addEventListener('click', function () {
             validationLink.classList.add('active');
+            paymentLink.classList.add('done')
         });
         scheduleLink.addEventListener('click', function () {
             scheduleLink.classList.add('active');
+            validationLink.classList.add('done');
         });
         trackingLink.addEventListener('click', function () {
             trackingLink.classList.add('active');
+            scheduleLink.classList.add('done');
         });
     </script>
 
