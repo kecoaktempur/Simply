@@ -45,3 +45,15 @@ def payment(request):
     active_link = 'payment'
     done_state = True
     return render(request, 'payment-opt.html', {'active_link': active_link, 'done_state': done_state})
+
+
+def validation(request):
+    active_link = 'validation'
+    done_state = True
+    return render(request, 'validation.html', {'active_link': active_link, 'done_state': done_state})
+
+
+def schedule(request):
+    active_link = 'schedule'
+    done_state = True
+    return render(request, 'schedule.html', {'active_link': active_link, 'done_state': done_state})

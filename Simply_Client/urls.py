@@ -11,5 +11,7 @@ urlpatterns = [
     path('tracking', views.tracking, name='tracking'),
     path('tracking-done', views.trackingDone, name='tracking2'),
     path('registration', views.formRegis, name='registration'),
-    path('payment', views.payment, name='payment')
+    path('payment', views.payment, name='payment'),
+    path('validation', views.validation, name='validation'),
+    path('schedule', views.schedule, name='schedule')
 ]

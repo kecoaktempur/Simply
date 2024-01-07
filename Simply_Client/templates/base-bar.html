@@ -53,21 +53,24 @@
                 </div>
                 <i class="fa-solid fa-check"></i>
             </a>
-            <a href="" class="tab" id="validationLink">
+            <a href="{% url 'Simply_Client:validation' %}"
+                class="tab{% if active_link == 'validation' %} active{% endif %}" id="validationLink">
                 <div class="tab-content">
                     <i class="fa-solid fa-file-circle-check" style="margin-right: 10px;"></i>
                     <h3>Validasi Dokumen</h3>
                 </div>
                 <i class="fa-solid fa-check"></i>
             </a>
-            <a href="" class="tab" id="scheduleLink">
+            <a href="{% url 'Simply_Client:schedule' %}" class="tab{% if active_link == 'schedule' %} active{% endif %}"
+                id="scheduleLink">
                 <div class="tab-content">
                     <i class="fa-solid fa-calendar" style="margin-right: 15px;"></i>
                     <h3>Jadwal Test</h3>
                 </div>
                 <i class="fa-solid fa-check"></i>
             </a>
-            <a href="{% url 'Simply_Client:tracking' %}" class="tab" id="trackingLink">
+            <a href="{% url 'Simply_Client:tracking' %}" class="tab{% if active_link == 'tracking' %} active{% endif %}"
+                id="trackingLink">
                 <div class="tab-content">
                     <i class="fa-solid fa-truck" style="margin-right: 9px;"></i>
                     <h3>Pengiriman SIM</h3>
