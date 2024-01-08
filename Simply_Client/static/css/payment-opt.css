@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #0E65D9;
+  --primary-color: #0e65d9;
   --dark-color: #141414;
-  --greyish-color: #D9D9D9;
+  --greyish-color: #d9d9d9;
   --light-color: #ffffff;
 }
 
@@ -14,7 +14,7 @@
   width: 100%;
   border-radius: 10px;
   border: 1px solid var(--greyish-color);
-  background: #FFF;
+  background: #fff;
 }
 
 .container .content-header {
@@ -28,6 +28,7 @@
   flex-direction: row;
   align-items: center;
   gap: 5px;
+  margin-bottom: 5px;
 }
 
 .container .content-header .content-header-back i {
@@ -46,6 +47,9 @@
   padding: 10px 30px 30px 30px;
 }
 
+.container .content-ktp p {
+  line-height: 1.75em;
+}
 
 .container .content-ktp h3 {
   text-align: center;
@@ -53,7 +57,7 @@
 }
 
 .container .content-ktp .content-ktp-note {
-  background-color: #FFDE16;
+  background-color: #ffde16;
   padding: 20px;
   margin: 20px 0px;
   display: flex;
@@ -67,8 +71,8 @@
 }
 
 .container .content-ktp .content-ktp-note .right-part-warning {
-  margin-top: 10px;
-  font-weight: 600;
+  margin-top: 5px;
+  line-height: 1.75em;
 }
 
 /* content */

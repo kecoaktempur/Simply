@@ -28,6 +28,7 @@
     flex-direction: row;
     align-items: center;
     gap: 5px;
+    margin-bottom: 5px;
 }
 
 .container .content-header .content-header-back i {
@@ -45,6 +46,10 @@
 .container .content-ktp {
     padding: 10px 30px 30px 30px;
 }
+
+.container .content-ktp p {
+    line-height: 1.75em;
+  }
 
 
 /* content-footer */
