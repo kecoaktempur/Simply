@@ -20,20 +20,12 @@
 .container p {
   margin-bottom: 40px;
 }
+
 .landing-banner {
   margin-bottom: 40px;
   width: 100%;
-  background-color: linear-gradient(
-    90deg,
-    #3545a5 25.02%,
-    rgba(53, 69, 165, 0.86) 50.34%,
-    rgba(0, 0, 0, 0) 126.75%
-  );
-  border-radius: 20px;
 }
 
-.landing-banner span {
-}
 .landing-banner img {
   width: 100%;
   border-radius: 20px;
@@ -46,7 +38,9 @@
   color: var(--light-color);
   text-align: left;
   position: absolute;
+  padding: 20px 30px;
 }
+
 .card-container {
   display: flex;
   flex-direction: row;

@@ -13,5 +13,6 @@ urlpatterns = [
     path('registration', views.formRegis, name='registration'),
     path('payment', views.payment, name='payment'),
     path('validation', views.validation, name='validation'),
+    path('success', views.success, name='success'),
     path('schedule', views.schedule, name='schedule')
 ]

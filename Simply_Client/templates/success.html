@@ -1,6 +1,6 @@
 {% extends "base-bar.html" %}
 {% load static %} {% block style %}
-<link rel="stylesheet" href="{% static 'css/validation.css' %}" />
+<link rel="stylesheet" href="{% static 'css/success.css' %}" />
 <link rel="shortcut icon" href="{% static 'img/korlantas.png' %}" type="image/x-icon">
 {% endblock %}
 {% block title %} Validasi Dokumen {% endblock %}
@@ -8,7 +8,7 @@
 
 <div class="container">
     <div class="content-header">
-        <a href="{% url 'Simply_Client:upload' %}" class="content-header-back">
+        <a href="{% url 'Simply_Client:validation' %}" class="content-header-back">
             <i class="fa-solid fa-chevron-left"></i>
             <p>Kembali</p>
         </a>
@@ -20,9 +20,9 @@
             Dokumen akan diverifikasi/validasi dalam kurun waktu 2x24 jam. Lakukan pengecekan rutin agar informasi hasil
             tidak terlewat
         </p>
-        <a href="{% url 'Simply_Client:success' %}" class="content-ktp-note">
-            <h4>Dokumen Masih Dalam Proses Validasi</h4>
-        </a>
+        <div class="content-ktp-note">
+            <h4>Dokumen Telah Divalidasi</h4>
+        </div>
     </div>
     <span></span>
     <div class="content-footer">
